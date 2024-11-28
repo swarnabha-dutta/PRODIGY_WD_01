@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: #555;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hero Section */
+  #hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, #00bcd4, #0073a8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    color: #0073a8;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #00bcd4;
+    color: #fff;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #about, #services, #contact {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    padding: 1rem;
+    background: #00bcd4;
+    color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  
+  /* Services Section with Hover Effects */
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service {
+    padding: 1.5rem;
+    background: #00bcd4;
+    color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover Effects */
+  .service:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #0073a8;
+  }
+  
+  /* Animation for Initial Appearance */
+  .service {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease-in-out forwards;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
